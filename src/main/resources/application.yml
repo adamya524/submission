@@ -1,0 +1,32 @@
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  sql:
+    init:
+      mode: always
+
+api:
+  base-url: "https://bfhldevapigw.healthrx.co.in/hiring"
+  details:
+    name: "Adamya Harit"
+    regNo: "22BCE2903"
+    email: "adamya.harit@gmail.com"
+
+logging:
+  level:
+    root: INFO
+    com.bfh.submission: DEBUG
+    org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
+
+
